@@ -80,6 +80,7 @@ const root = {
 
 app.use('/graphql', graphqlHTTP({
     schema,
+    rootValue: root,
     graphiql: true,
 }))
 

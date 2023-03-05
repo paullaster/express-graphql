@@ -72,6 +72,12 @@ const schema = new GraphQLSchema({
     mutations:Mutation,
 });
 
+const root = {
+    hello: () => {
+        return "Hello world!, Graphql";
+    }
+}
+
 app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: true,

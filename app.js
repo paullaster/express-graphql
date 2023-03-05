@@ -7,10 +7,14 @@ const app = express();
 
 const port = 4545;
 
+
+
 const RootQuery = new GraphQLObjectType({
     name: 'RootQuery',
     fields:{
-
+        getAllUsers: {
+            typ
+        }
     }
 });
 

@@ -7,7 +7,7 @@ const {
     GraphQLInt,
     GraphQLString
 } = require('graphql');
-const {graphqlHTTP} = require('express-graphql');
+const {graphqlHTTP} = graphql;
 const app = express();
 
 const port = 4545;

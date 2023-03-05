@@ -26,7 +26,7 @@ const USerType = new GraphQLObjectType({
 })
 
 const RootQuery = new GraphQLObjectType({
-    name: 'RootQuery',
+    name: 'RootQueryType',
     fields:{
         getAllUsers: {
             type: new GraphQLList(USerType),

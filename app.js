@@ -14,7 +14,8 @@ const port = 4545;
 const USerType = new GraphQLObjectType({
     name: 'User',
     fields:() => ({
-        id: {type: 'GraphQLInt'}
+        id: {type: GraphQLInt},
+        first_name: {type: GraphQLString},
     })
 })
 

@@ -44,7 +44,7 @@ const Mutation = new GraphQLObjectType({
     name: 'Mutation',
     fields: {
         createUser: {
-            
+            type: USerType,
         }
     }
 })

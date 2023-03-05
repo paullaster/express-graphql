@@ -1,13 +1,22 @@
 const express = require('express');
 const userData = require('./MOCK_DATA.json');
 const graphql = require('graphql');
-const {GraphQLObjectType, GraphQLSchema} = require('graphql');
+const {
+    GraphQLObjectType, 
+    GraphQLSchema,
+    GraphQLInt,
+} = require('graphql');
 const {graphqlHTTP} = require('express-graphql');
 const app = express();
 
 const port = 4545;
 
-
+const USerType = new GraphQLObjectType({
+    name: 'User',
+    fields:() => ({
+        id: {type: 'GraphQLInt'}
+    })
+})
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQuery',

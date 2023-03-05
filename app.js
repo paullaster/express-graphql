@@ -7,7 +7,17 @@ const app = express();
 const port = 4545;
 
 const RootQuery = new GraphQLObjectType({
+    name: 'RootQuery',
+    fields:{
 
+    }
+});
+
+const Mutation = new GraphQLObjectType({
+    name: 'Mutation',
+    fields: {
+        
+    }
 })
 
 const schema = new GraphQLSchema({

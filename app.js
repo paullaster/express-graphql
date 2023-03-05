@@ -6,7 +6,10 @@ const app = express();
 
 const port = 4545;
 
-
+app.use('/graphql', graphqlHTTP({
+    schema,
+    graphiql: true,
+}))
 
 app.listen(port, () => {
     console.log('listening on port ' + port);

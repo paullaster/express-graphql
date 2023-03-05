@@ -47,7 +47,9 @@ const Mutation = new GraphQLObjectType({
             type: USerType,
             args: {
                 first_name: {type: GraphQLString},
-                last_name: {type: GraphQLString}
+                last_name: {type: GraphQLString},
+                email: {type: GraphQLString},
+                
             }
         }
     }

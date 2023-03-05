@@ -29,7 +29,13 @@ const RootQuery = new GraphQLObjectType({
     name: 'RootQuery',
     fields:{
         getAllUsers: {
-            type: GraphQLList(USerType)
+            type: GraphQLList(USerType),
+            args: {
+
+            },
+            resolve(parent, args){
+                return userData;
+            }
         }
     }
 });

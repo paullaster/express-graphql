@@ -51,6 +51,9 @@ const Mutation = new GraphQLObjectType({
                 email: {type: GraphQLString},
                 gender: {type: GraphQLString},
                 ip_address:{type: GraphQLString}
+            },
+            resolve(parent, args){
+
             }
         }
     }

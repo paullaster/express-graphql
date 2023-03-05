@@ -53,7 +53,15 @@ const Mutation = new GraphQLObjectType({
                 ip_address:{type: GraphQLString}
             },
             resolve(parent, args){
-
+                userData.push( {
+                    id: userData.length + 1,
+                    first_name: args.first_name,
+                    last_name: args.last_name,
+                    email: args.email,
+                    gender: args.gender,
+                    ip_address: args.ip_address
+                });
+                return args;
             }
         }
     }

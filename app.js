@@ -1,6 +1,7 @@
 const express = require('express');
 const userData = require('./MOCK_DATA.json');
-const graphql, {GraphQLObjectType, GraphQLSchema} = require('graphql');
+const graphql = require('graphql');
+const {GraphQLObjectType, GraphQLSchema} = require('graphql');
 const {graphqlHTTP} = require('express-graphql');
 const app = express();
 

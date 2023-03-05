@@ -16,13 +16,13 @@ const RootQuery = new GraphQLObjectType({
 const Mutation = new GraphQLObjectType({
     name: 'Mutation',
     fields: {
-        
+
     }
 })
 
 const schema = new GraphQLSchema({
-    queries:,
-    mutations:,
+    queries:RootQuery,
+    mutations:Mutation,
 }),
 
 app.use('/graphql', graphqlHTTP({

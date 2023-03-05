@@ -7,8 +7,8 @@ const {
     GraphQLInt,
     GraphQLString,
     GraphQLList,
-} = require('graphql');
-const {graphqlHTTP} = graphql;
+} = graphql;
+const {graphqlHTTP} = require('express-graphql');
 const app = express();
 
 const port = 4545;
@@ -29,7 +29,7 @@ const RootQuery = new GraphQLObjectType({
     name: 'RootQuery',
     fields:{
         getAllUsers: {
-            type: GraphQLList(USerType),
+            type: new GraphQLList(USerType),
             args: {
 
             },
